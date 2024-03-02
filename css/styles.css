@@ -6,11 +6,13 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
     width: 100%;
     font-size: 16px;
+    width: 100%;
 }
 
 body {
@@ -20,13 +22,14 @@ body {
     align-items: center;
     flex-flow: row wrap;
     font-family: "Roboto", sans-serif;
+
 }
 
 main {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
 }
 
@@ -34,7 +37,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
 }
 
@@ -48,7 +51,7 @@ div {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 /* *************** HERO *************** */
@@ -56,15 +59,16 @@ div {
 .hero {
     background: url("../img/illustration-sign-up-mobile.svg") center no-repeat;
     background-size: cover;
-    margin-bottom: 40px;
 }
 
 .hero p {
     visibility: hidden;
+    margin: 126px 0;
 }
 
 /* *************** CONTENT *************** */
-.content {
+.info,
+.form {
     width: 87.2%;
 }
 
@@ -109,10 +113,58 @@ form {
 .form label {
     font-size: .75em;
     font-weight: bold;
-    margin-bottom: 10px;
+
 }
 
 input[type="text"] {
     width: 100%;
-    padding: 16px 24px;
+    padding: 16px 0 16px 24px;
+    margin: 10px 0 24px 0;
+    border: 2px solid #D8D8D8;
+    border-radius: 10px;
+
+}
+
+.subscribe {
+    width: 100%;
+    padding: 18px 46px 14px 48px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #fff;
+    background: #242742;
+    border-radius: 10px;
+    border: none;
+}
+
+/* *************** SUCCESS *************** */
+.success {
+    width: 87.2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-top: 149px;
+}
+
+.success img {
+    width: 19.6%;
+    margin-bottom: 40px;
+}
+
+.success h1 {
+    width: 100%;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.dismiss {
+    width: 100%;
+    padding: 18px 46px 14px 48px;
+    margin-top: 263px;
+    font-weight: bold;
+    color: #fff;
+    background: #242742;
+    border-radius: 10px;
+    border: none;
 }
