@@ -67,12 +67,24 @@ div {
 }
 
 /* *************** CONTENT *************** */
+
+
+.content,
+.txt-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+/* *************** INFO *************** */
+
 .info,
 .form {
     width: 87.2%;
 }
 
-/* *************** INFO *************** */
 .info h1 {
     font-size: 2.5em;
     margin: 40px 0 24px 0;
@@ -138,12 +150,13 @@ input[type="text"] {
 
 /* *************** SUCCESS *************** */
 .success {
-    width: 87.2%;
+    width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-flow: row wrap;
     margin-top: 149px;
+    background-color: #fff;
 }
 
 .success img {
@@ -167,4 +180,70 @@ input[type="text"] {
     background: #242742;
     border-radius: 10px;
     border: none;
+}
+
+/* *************** DESKTOP STYLES *************** */
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 1440px;
+        background: #36384D !important;
+        height: 100vh;
+    }
+
+    main {
+        width: 64.4%;
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding: 24px;
+    }
+
+    .content {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .hero {
+        width: 43%;
+        background-image: url('../img/illustration-sign-up-desktop.svg') center no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+    }
+
+    .hero p {
+        margin: 287px 0;
+    }
+
+    .txt-content {
+        width: 40.5%;
+        margin-left: 40px;
+    }
+
+    /* *************** INFO *************** */
+
+    .info,
+    .form {
+        width: 100%;
+    }
+
+    /* *************** SUCCESS *************** */
+    .success {
+        width: 35%;
+        padding: 48px 64px 64px 64px;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .success h1 {
+        margin-bottom: 24px;
+    }
+
+    .dismiss {
+        padding: 20px 46px 20px 48px;
+        margin: 40px 0 0 0;
+    }
+
+
 }
