@@ -3,18 +3,26 @@ const success = document.querySelector('.success');
 const subscribe = document.querySelector('.subscribe');
 const dismiss = document.querySelector('.dismiss');
 const email = document.querySelector('#email');
+const message = document.querySelector('.message');
 
-const regEx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+const emailRegex = /^([a-z]+)@([a-zA-Z0-9\._]+)\.([a-z]+)([\.]?)/;
 
 subscribe.addEventListener('click', (e) => {
+    if (email.value.match(emailRegex)) {
         e.preventDefault();
         content.classList.add('hide');
         success.classList.remove('hide');
-        console.log('click');    
+    } else {
+        e.preventDefault();
+        message.classList.remove('hide');
+    }
+          
 });
 
 dismiss.addEventListener('click', (e) => {
     e.preventDefault();
     success.classList.add('hide');
     content.classList.remove('hide');
+    message.classList.add('hide');
+    email.value = "";
 });
