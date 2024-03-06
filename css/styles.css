@@ -232,6 +232,15 @@ input[type="text"] {
         width: 100%;
     }
 
+    #email:hover {
+        cursor: pointer;
+    }
+
+    .subscribe:hover {
+        cursor: pointer;
+        background: linear-gradient(#FF6A3A, #FF527B);
+    }
+
     /* *************** SUCCESS *************** */
     .success {
         width: 35%;
@@ -247,6 +256,11 @@ input[type="text"] {
     .dismiss {
         padding: 20px 46px 20px 48px;
         margin: 40px 0 0 0;
+    }
+
+    .dismiss:hover {
+        cursor: pointer;
+        background: linear-gradient(#FF6A3A, #FF527B);
     }
 
 
