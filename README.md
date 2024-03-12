@@ -1,6 +1,6 @@
 # Newsletter Sign Up
 > This is an email sign up form for a newsletter. If you enter an email in an incorrect format a message is displayed asking for a correct format email. When you post a proper email you are met with a thank you screen.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Live demo [_here_](https://hyuuga81.github.io/legendary-happiness/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -69,7 +69,7 @@ To do:
 
 ## Acknowledgements
 Give credit here.
-- This project was found on [Frontend Mentor](https://www.frontendmentor.io).
+- This project was created by [Frontend Mentor](https://www.frontendmentor.io).
 
 
 
