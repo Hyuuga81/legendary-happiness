@@ -5,7 +5,7 @@ const dismiss = document.querySelector('.dismiss');
 const email = document.querySelector('#email');
 const message = document.querySelector('.message');
 
-const emailRegex = /^([a-z]+)@([a-zA-Z0-9\._]+)\.([a-z]+)([\.]?)/;
+const emailRegex = /^([a-z\d\.-])+@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
 
 subscribe.addEventListener('click', (e) => {
     if (email.value.match(emailRegex)) {
